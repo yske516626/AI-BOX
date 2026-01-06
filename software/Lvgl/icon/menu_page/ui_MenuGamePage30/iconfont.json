@@ -1,0 +1,16 @@
+{
+  "id": "4897718",
+  "name": "game",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "37529947",
+      "name": "crazy-play-2048",
+      "font_class": "crazy-play-2048",
+      "unicode": "e9d2",
+      "unicode_decimal": 59858
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+tool: AC5
+fileName: 'Watch_Lvgl_Freertos.map'
+elfName: 'Watch_Lvgl_Freertos.axf'
+compilerName: 'ARM Compiler'
+compilerFullName: 'Component: ARM Compiler 5.06 update 5 (build 528)'
+compilerPath: 'D:\develop\keil\ARM\ARMCC\bin\armcc.exe'

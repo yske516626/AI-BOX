@@ -1,0 +1,44 @@
+{
+  "id": "4888593",
+  "name": "lvgl",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18787828",
+      "name": "温度摄氏度",
+      "font_class": "wendusheshidu",
+      "unicode": "eec2",
+      "unicode_decimal": 61122
+    },
+    {
+      "icon_id": "4522644",
+      "name": "步数",
+      "font_class": "bushu",
+      "unicode": "e720",
+      "unicode_decimal": 59168
+    },
+    {
+      "icon_id": "8763646",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "30044911",
+      "name": "月亮",
+      "font_class": "moon",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "5320519",
+      "name": "太阳",
+      "font_class": "taiyang",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    }
+  ]
+}

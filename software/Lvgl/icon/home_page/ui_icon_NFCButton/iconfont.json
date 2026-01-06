@@ -1,0 +1,16 @@
+{
+  "id": "4890982",
+  "name": "nfc",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16751109",
+      "name": "nfc",
+      "font_class": "nfc",
+      "unicode": "ef0d",
+      "unicode_decimal": 61197
+    }
+  ]
+}

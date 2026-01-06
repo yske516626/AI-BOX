@@ -1,0 +1,12 @@
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.c
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/lv_fs.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/../lv_conf_internal.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/../lv_conf_kconfig.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/../../../lv_conf.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/lv_log.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/lv_types.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/lv_mem.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/lv_color.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/lv_assert.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\gifdec.o: .\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\gif\../../../misc/lv_math.h

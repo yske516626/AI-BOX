@@ -1,0 +1,4 @@
+arm-none-eabi-objcopy --update-section ER_IROM1="C:\Users\project\AppData\Local\Temp\\Watch_Lvgl_Freertos_rKmZwnkQ.bin" "d:\develop\Demo\watch_lvgl and freertos_back\software\Watch_Lvgl_Freertos\MDK-ARM\build\Watch_Lvgl_Freertos/Watch_Lvgl_Freertos.axf" "d:\develop\Demo\watch_lvgl and freertos_back\software\Watch_Lvgl_Freertos\MDK-ARM\build\Watch_Lvgl_Freertos/Watch_Lvgl_Freertos.elf"
+
+arm-none-eabi-objcopy: d:\develop\Demo\watch_lvgl and freertos_back\software\Watch_Lvgl_Freertos\MDK-ARM\build\Watch_Lvgl_Freertos/Watch_Lvgl_Freertos.elf: warning: allocated section `RW_IRAM1' not in segment
+

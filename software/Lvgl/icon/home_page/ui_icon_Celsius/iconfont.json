@@ -1,0 +1,16 @@
+{
+  "id": "4888593",
+  "name": "lvgl",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18787828",
+      "name": "温度摄氏度",
+      "font_class": "wendusheshidu",
+      "unicode": "eec2",
+      "unicode_decimal": 61122
+    }
+  ]
+}

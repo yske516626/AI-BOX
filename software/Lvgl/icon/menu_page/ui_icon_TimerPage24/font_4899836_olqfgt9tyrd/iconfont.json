@@ -1,0 +1,23 @@
+{
+  "id": "4899836",
+  "name": "TimerPage",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7939947",
+      "name": "播放",
+      "font_class": "arrow-",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "16502108",
+      "name": "复位",
+      "font_class": "fuwei",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+C51 COMPILER V7.08   STC_LSM303DLH                                                         06/19/2011 23:40:18 PAGE 1   
+
+
+C51 COMPILER V7.08, COMPILATION OF MODULE STC_LSM303DLH
+OBJECT MODULE PLACED IN STC_LSM303DLH.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE STC_LSM303DLH.C BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          //***************************************
+   2          // LSM303DLH IIC测试程序
+   3          // 使用单片机STC89C51 
+   4          // 晶振：11.0592M
+   5          // 显示：LCD1602
+   6          // 编译环境 Keil uVision2
+   7          // 参考宏晶网站24c04通信程序
+   8          // 时间：2011年3月1日
+   9          // QQ：531389319
+  10          //****************************************
+  11          #include  <REG51.H>     
+  12          #include  <math.h>    //Keil library  
+  13          #include  <stdio.h>   //Keil library    
+  14          #include  <INTRINS.H>
+  15          #define   uchar unsigned char
+  16          #define   uint unsigned int     
+  17          #define   DataPort P0    //LCD1602数据端口
+  18          sbit      SCL=P1^0;      //IIC时钟引脚定义
+  19          sbit      SDA=P1^1;      //IIC数据引脚定义
+  20          sbit      LCM_RS=P2^0;   //LCD1602命令端口              
+  21          sbit      LCM_RW=P2^1;   //LCD1602命令端口              
+  22          sbit      LCM_EN=P2^2;   //LCD1602命令端口 
+  23          
+  24          #define LSM303A_SlaveAddress   0x30       //定义器件在IIC总线中的从地址,(加速度)根据ALT  ADDRESS地址引脚不同修
+             -改 0x30（ADDRESS=0）                                 
+  25          #define LSM303M_SlaveAddress   0x3C   //定义器件在IIC总线中的从地址,(磁场)根据ALT    ADDRESS地址引脚不同修
+             -改
+  26          
+  27                                                                     
+  28          typedef unsigned char  BYTE;
+  29          typedef unsigned short WORD;
+  30          
+  31          BYTE BUF[8];                         //接收数据缓存区           
+  32          uchar ge,shi,bai,qian,wan;           //显示变量
+  33          int  dis_data;                       //变量
+  34          
+  35          void delay(unsigned int k);
+  36          void InitLcd();                      //初始化lcd1602
+  37          
+  38          void WriteDataLCM(uchar dataW);
+  39          void WriteCommandLCM(uchar CMD,uchar Attribc);
+  40          void DisplayOneChar(uchar X,uchar Y,uchar DData);
+  41          void conversion(uint temp_data);
+  42          
+  43          void  Single_Write(uchar SlaveAddress,uchar REG_Address,uchar REG_data);   //单个写入数据
+  44          uchar Single_Read(uchar SlaveAddress,uchar REG_Address);                   //单个读取内部寄存器数据
+  45          void  Multiple_Read(uchar,uchar);                                          //连续的读取内部寄存器数据
+  46          //------------------------------------
+  47          void Delay5us();
+  48          void Delay5ms();
+  49          void LSM303_Start();
+  50          void LSM303_Stop();
+  51          void LSM303_SendACK(bit ack);
+  52          bit  LSM303_RecvACK();
+  53          void LSM303_SendByte(BYTE dat);
+C51 COMPILER V7.08   STC_LSM303DLH                                                         06/19/2011 23:40:18 PAGE 2   
+
+  54          BYTE LSM303_RecvByte();
+  55          void LSM303_ReadPage();
+  56          void LSM303_WritePage();
+  57          //-----------------------------------
+  58          
+  59          //*********************************************************
+  60          void conversion(uint temp_data)  
+  61          {  
+  62   1          wan=temp_data/10000+0x30 ;
+  63   1          temp_data=temp_data%10000;   //取余运算
+  64   1              qian=temp_data/1000+0x30 ;
+  65   1          temp_data=temp_data%1000;    //取余运算
+  66   1          bai=temp_data/100+0x30   ;
+  67   1          temp_data=temp_data%100;     //取余运算
+  68   1          shi=temp_data/10+0x30    ;
+  69   1          temp_data=temp_data%10;      //取余运算
+  70   1          ge=temp_data+0x30;  
+  71   1      }
+  72          
+  73          /*******************************/
+  74          void delay(unsigned int k)      
+  75          {                                               
+  76   1      unsigned int i,j;                               
+  77   1      for(i=0;i<k;i++)
+  78   1      {                       
+  79   2      for(j=0;j<121;j++)                      
+  80   2      {;}}                                            
+  81   1      }
+  82          /*******************************/
+  83          void WaitForEnable(void)        
+  84          {                                       
+  85   1      DataPort=0xff;          
+  86   1      LCM_RS=0;LCM_RW=1;_nop_();
+  87   1      LCM_EN=1;_nop_();_nop_();
+  88   1      while(DataPort&0x80);   
+  89   1      LCM_EN=0;                               
+  90   1      }                                       
+  91          /*******************************/
+  92          void WriteCommandLCM(uchar CMD,uchar Attribc)
+  93          {                                       
+  94   1      if(Attribc)WaitForEnable();     
+  95   1      LCM_RS=0;LCM_RW=0;_nop_();
+  96   1      DataPort=CMD;_nop_();   
+  97   1      LCM_EN=1;_nop_();_nop_();LCM_EN=0;
+  98   1      }                                       
+  99          /*******************************/
+ 100          void WriteDataLCM(uchar dataW)
+ 101          {                                       
+ 102   1      WaitForEnable();                
+ 103   1      LCM_RS=1;LCM_RW=0;_nop_();
+ 104   1      DataPort=dataW;_nop_(); 
+ 105   1      LCM_EN=1;_nop_();_nop_();LCM_EN=0;
+ 106   1      }               
+ 107          /***********************************/
+ 108          void InitLcd()                          
+ 109          {                       
+ 110   1      WriteCommandLCM(0x38,1);        
+ 111   1      WriteCommandLCM(0x08,1);        
+ 112   1      WriteCommandLCM(0x01,1);        
+ 113   1      WriteCommandLCM(0x06,1);        
+ 114   1      WriteCommandLCM(0x0c,1);
+ 115   1      }                       
+C51 COMPILER V7.08   STC_LSM303DLH                                                         06/19/2011 23:40:18 PAGE 3   
+
+ 116          /***********************************/
+ 117          void DisplayOneChar(uchar X,uchar Y,uchar DData)
+ 118          {                                               
+ 119   1      Y&=1;                                           
+ 120   1      X&=15;                                          
+ 121   1      if(Y)X|=0x40;                                   
+ 122   1      X|=0x80;                        
+ 123   1      WriteCommandLCM(X,0);           
+ 124   1      WriteDataLCM(DData);            
+ 125   1      }                                               
+ 126          
+ 127          /**************************************
+ 128          延时5微秒(STC90C52RC@12M)
+ 129          不同的工作环境,需要调整此函数，注意时钟过快时需要修改
+ 130          当改用1T的MCU时,请调整此延时函数
+ 131          **************************************/
+ 132          void Delay5us()
+ 133          {
+ 134   1          _nop_();_nop_();_nop_();_nop_();
+ 135   1          _nop_();_nop_();_nop_();_nop_();
+ 136   1              _nop_();_nop_();_nop_();_nop_();
+ 137   1              _nop_();_nop_();_nop_();_nop_();
+ 138   1      }
+ 139          
+ 140          /**************************************
+ 141          延时5毫秒(STC90C52RC@12M)
+ 142          不同的工作环境,需要调整此函数
+ 143          当改用1T的MCU时,请调整此延时函数
+ 144          **************************************/
+ 145          void Delay5ms()
+ 146          {
+ 147   1          WORD n = 560;
+ 148   1      
+ 149   1          while (n--);
+ 150   1      }
+ 151          
+ 152          /**************************************
+ 153          起始信号
+ 154          **************************************/
+ 155          void LSM303_Start()
+ 156          {
+ 157   1          SDA = 1;                    //拉高数据线
+ 158   1          SCL = 1;                    //拉高时钟线
+ 159   1          Delay5us();                 //延时
+ 160   1          SDA = 0;                    //产生下降沿
+ 161   1          Delay5us();                 //延时
+ 162   1          SCL = 0;                    //拉低时钟线
+ 163   1      }
+ 164          
+ 165          /**************************************
+ 166          停止信号
+ 167          **************************************/
+ 168          void LSM303_Stop()
+ 169          {
+ 170   1          SDA = 0;                    //拉低数据线
+ 171   1          SCL = 1;                    //拉高时钟线
+ 172   1          Delay5us();                 //延时
+ 173   1          SDA = 1;                    //产生上升沿
+ 174   1          Delay5us();                 //延时
+ 175   1      }
+ 176          
+ 177          /**************************************
+C51 COMPILER V7.08   STC_LSM303DLH                                                         06/19/2011 23:40:18 PAGE 4   
+
+ 178          发送应答信号
+ 179          入口参数:ack (0:ACK 1:NAK)
+ 180          **************************************/
+ 181          void LSM303_SendACK(bit ack)
+ 182          {
+ 183   1          SDA = ack;                  //写应答信号
+ 184   1          SCL = 1;                    //拉高时钟线
+ 185   1          Delay5us();                 //延时
+ 186   1          SCL = 0;                    //拉低时钟线
+ 187   1          Delay5us();                 //延时
+ 188   1      }
+ 189          
+ 190          /**************************************
+ 191          接收应答信号
+ 192          **************************************/
+ 193          bit LSM303_RecvACK()
+ 194          {
+ 195   1          SCL = 1;                    //拉高时钟线
+ 196   1          Delay5us();                 //延时
+ 197   1          CY = SDA;                   //读应答信号
+ 198   1          SCL = 0;                    //拉低时钟线
+ 199   1          Delay5us();                 //延时
+ 200   1      
+ 201   1          return CY;
+ 202   1      }
+ 203          
+ 204          /**************************************
+ 205          向IIC总线发送一个字节数据
+ 206          **************************************/
+ 207          void LSM303_SendByte(BYTE dat)
+ 208          {
+ 209   1          BYTE i;
+ 210   1      
+ 211   1          for (i=0; i<8; i++)         //8位计数器
+ 212   1          {
+ 213   2              dat <<= 1;              //移出数据的最高位
+ 214   2              SDA = CY;               //送数据口
+ 215   2              SCL = 1;                //拉高时钟线
+ 216   2              Delay5us();             //延时
+ 217   2              SCL = 0;                //拉低时钟线
+ 218   2              Delay5us();             //延时
+ 219   2          }
+ 220   1          LSM303_RecvACK();
+ 221   1      }
+ 222          
+ 223          /**************************************
+ 224          从IIC总线接收一个字节数据
+ 225          **************************************/
+ 226          BYTE LSM303_RecvByte()
+ 227          {
+ 228   1          BYTE i;
+ 229   1          BYTE dat = 0;
+ 230   1      
+ 231   1          SDA = 1;                    //使能内部上拉,准备读取数据,
+ 232   1          for (i=0; i<8; i++)         //8位计数器
+ 233   1          {
+ 234   2              dat <<= 1;
+ 235   2              SCL = 1;                //拉高时钟线
+ 236   2              Delay5us();             //延时
+ 237   2              dat |= SDA;             //读数据               
+ 238   2              SCL = 0;                //拉低时钟线
+ 239   2              Delay5us();             //延时
+C51 COMPILER V7.08   STC_LSM303DLH                                                         06/19/2011 23:40:18 PAGE 5   
+
+ 240   2          }
+ 241   1          return dat;
+ 242   1      }
+ 243          
+ 244          //单字节写入LSM303内部数据*******************************
+ 245          
+ 246          void Single_Write(uchar SlaveAddress,uchar REG_Address,uchar REG_data)
+ 247          {
+ 248   1          LSM303_Start();                  //起始信号
+ 249   1          LSM303_SendByte(SlaveAddress);   //发送设备地址+写信号
+ 250   1          LSM303_SendByte(REG_Address);    //内部寄存器地址
+ 251   1          LSM303_SendByte(REG_data);       //内部寄存器数据
+ 252   1          LSM303_Stop();                   //发送停止信号
+ 253   1      }
+ 254          
+ 255          //单字节读取LSM303内部数据********************************
+ 256          uchar Single_Read(uchar SlaveAddress,uchar REG_Address)
+ 257          {  uchar REG_data;
+ 258   1          LSM303_Start();                          //起始信号
+ 259   1          LSM303_SendByte(SlaveAddress);           //发送设备地址+写信号
+ 260   1          LSM303_SendByte(REG_Address);            //发送存储单元地址 
+ 261   1          LSM303_Start();                          //起始信号
+ 262   1          LSM303_SendByte(SlaveAddress+1);         //发送设备地址+读信号
+ 263   1          REG_data=LSM303_RecvByte();              //读出寄存器数据
+ 264   1              LSM303_SendACK(1);   
+ 265   1              LSM303_Stop();                           //停止信号
+ 266   1          return REG_data; 
+ 267   1      }
+ 268          //*********************************************************
+ 269          //连续读出LSM303内部数据
+ 270          //*********************************************************
+ 271          void Multiple_read(uchar SlaveAddress,uchar ST_Address)
+ 272          {   uchar i;
+ 273   1          LSM303_Start();                          //起始信号
+ 274   1          LSM303_SendByte(SlaveAddress);           //发送设备地址+写信号
+ 275   1          LSM303_SendByte(ST_Address);             //发送存储单元地址
+ 276   1          LSM303_Start();                          //起始信号
+ 277   1          LSM303_SendByte(SlaveAddress+1);         //发送设备地址+读信号
+ 278   1               for (i=0; i<6; i++)                     //连续读取6个地址数据，存储中BUF
+ 279   1          {
+ 280   2              BUF[i] = LSM303_RecvByte();          //BUF[0]存储
+ 281   2              if (i == 5)
+ 282   2              {
+ 283   3                 LSM303_SendACK(1);                //最后一个数据需要回NOACK
+ 284   3              }
+ 285   2              else
+ 286   2              {
+ 287   3                LSM303_SendACK(0);                //回应ACK
+ 288   3             }
+ 289   2         }
+ 290   1          LSM303_Stop();                          //停止信号
+ 291   1          Delay5ms();
+ 292   1      }
+ 293          
+ 294          //**************************************************************
+ 295          
+ 296          //初始化LSM303A(加速度)，根据需要请参考pdf进行修改**************
+ 297          void Init_LSM303A()
+ 298          {
+ 299   1         Single_Write(LSM303A_SlaveAddress,0x20,0x27);   //测量范围,正负2g，16位模式
+ 300   1      }
+ 301          
+C51 COMPILER V7.08   STC_LSM303DLH                                                         06/19/2011 23:40:18 PAGE 6   
+
+ 302          //初始化LSM303M(磁场)，根据需要请参考pdf进行修改****
+ 303          void Init_LSM303M()
+ 304          {
+ 305   1           Single_Write(LSM303M_SlaveAddress,0x02,0x00);  //
+ 306   1      }
+ 307          //**************************************************************
+ 308          //加速度显示x轴
+ 309          void display_x()
+ 310          {   float temp; 
+ 311   1          BUF[0]=Single_Read(LSM303A_SlaveAddress,0x28);//OUT_X_L_A
+ 312   1              BUF[1]=Single_Read(LSM303A_SlaveAddress,0x29);//OUT_X_H_A
+ 313   1      
+ 314   1          dis_data=(BUF[1]<<8)+BUF[0];  //合成数据   
+ 315   1              
+ 316   1              if(dis_data<0){
+ 317   2              dis_data=-dis_data;
+ 318   2          DisplayOneChar(2,0,'-');      //显示正负符号位
+ 319   2              }
+ 320   1              else DisplayOneChar(2,0,' '); //显示空格
+ 321   1         
+ 322   1          temp=(float)dis_data/16.383;  //
+ 323   1          conversion(temp);          //转换出显示需要的数据
+ 324   1              DisplayOneChar(0,0,'X');   //第0行，第0列 显示X
+ 325   1          DisplayOneChar(1,0,':'); 
+ 326   1          DisplayOneChar(3,0,qian); 
+ 327   1              DisplayOneChar(4,0,'.'); 
+ 328   1          DisplayOneChar(5,0,bai); 
+ 329   1              DisplayOneChar(6,0,'g'); 
+ 330   1      }
+ 331          
+ 332          //***************************************************************
+ 333          //加速度显示y轴
+ 334          void display_y()
+ 335          {    float temp; 
+ 336   1           BUF[2]=Single_Read(LSM303A_SlaveAddress,0x2a);//OUT_Y_L_A
+ 337   1               BUF[3]=Single_Read(LSM303A_SlaveAddress,0x2b);//OUT_Y_H_A
+ 338   1      
+ 339   1      
+ 340   1          dis_data=(BUF[3]<<8)+BUF[2];  //合成数据   
+ 341   1              if(dis_data<0){
+ 342   2              dis_data=-dis_data;
+ 343   2          DisplayOneChar(2,1,'-');      //显示正负符号位
+ 344   2              }
+ 345   1              else DisplayOneChar(2,1,' '); //显示空格
+ 346   1      
+ 347   1          temp=(float)dis_data/16.383;  //计算数据和显示
+ 348   1          conversion(temp);          //转换出显示需要的数据
+ 349   1              DisplayOneChar(0,1,'Y');   //第1行，第0列 显示y
+ 350   1          DisplayOneChar(1,1,':'); 
+ 351   1          DisplayOneChar(3,1,qian); 
+ 352   1              DisplayOneChar(4,1,'.'); 
+ 353   1          DisplayOneChar(5,1,bai); 
+ 354   1        //  DisplayOneChar(6,1,shi);  
+ 355   1              DisplayOneChar(6,1,'g');  
+ 356   1      }
+ 357          
+ 358          //**************************************************************
+ 359          //加速度显示z轴
+ 360          void display_z()
+ 361          {    float temp;
+ 362   1           BUF[4]=Single_Read(LSM303A_SlaveAddress,0x2c);//OUT_Z_L_A
+ 363   1               BUF[5]=Single_Read(LSM303A_SlaveAddress,0x2d);//OUT_Z_H_A
+C51 COMPILER V7.08   STC_LSM303DLH                                                         06/19/2011 23:40:18 PAGE 7   
+
+ 364   1      
+ 365   1          dis_data=(BUF[5]<<8)+BUF[4];  //合成数据   
+ 366   1              if(dis_data<0){
+ 367   2              dis_data=-dis_data;
+ 368   2          DisplayOneChar(11,1,'-');     //显示负符号位
+ 369   2              }
+ 370   1              else DisplayOneChar(11,1,' ');//显示空格
+ 371   1      
+ 372   1          temp=(float)dis_data/16.383;  //计算数据和显示
+ 373   1          conversion(temp);             //转换出显示需要的数据
+ 374   1              DisplayOneChar(9,1,'Z');      //第0行，第10列 显示Z
+ 375   1          DisplayOneChar(10,1,':'); 
+ 376   1          DisplayOneChar(12,1,qian); 
+ 377   1              DisplayOneChar(13,1,'.'); 
+ 378   1          DisplayOneChar(14,1,bai); 
+ 379   1         // DisplayOneChar(14,1,shi); 
+ 380   1              DisplayOneChar(15,1,'g');  
+ 381   1      }
+ 382          
+ 383          void display_Angle(void)
+ 384             {  int x,y,z;
+ 385   1            double  angle;
+ 386   1       
+ 387   1          x=BUF[0] << 8 | BUF[1]; //Combine MSB and LSB of X Data output register
+ 388   1          y=BUF[2] << 8 | BUF[3]; //Combine MSB and LSB of Z Data output register
+ 389   1          z=BUF[4] << 8 | BUF[5]; //Combine MSB and LSB of Y Data output register
+ 390   1      
+ 391   1          angle= atan2((double)y,(double)x) * (180 / 3.14159265) + 180; // angle in degrees
+ 392   1          angle*=10;
+ 393   1      
+ 394   1          conversion(angle);       //计算数据和显示
+ 395   1              DisplayOneChar(9,0,'A'); 
+ 396   1          DisplayOneChar(10,0,':'); 
+ 397   1          DisplayOneChar(11,0,qian); 
+ 398   1          DisplayOneChar(12,0,bai); 
+ 399   1          DisplayOneChar(13,0,shi); 
+ 400   1          DisplayOneChar(14,0,'.'); 
+ 401   1              DisplayOneChar(15,0,ge); 
+ 402   1              }
+ 403          
+ 404          //*********************************************************
+ 405          //******主程序********
+ 406          //*********************************************************
+ 407          void main()
+ 408          { 
+ 409   1          delay(50);                     //上电延时           
+ 410   1          InitLcd();                     //液晶初始化
+ 411   1          Init_LSM303A();                //初始化LSM303 加速度
+ 412   1          Init_LSM303M();                //初始化LSM303 磁场
+ 413   1        while(1)                         //循环
+ 414   1        { 
+ 415   2          delay(10);                     //延时 
+ 416   2          display_x();                   //---------加速度，显示X轴
+ 417   2          display_y();                   //---------加速度，显示Y轴
+ 418   2          display_z();                   //---------加速度，显示Z轴
+ 419   2      
+ 420   2          delay(10);                     //延时 
+ 421   2              Multiple_Read(LSM303M_SlaveAddress,0X03); //连续读出数据，存储在BUF中  
+ 422   2          display_Angle();               //---------磁场，显示角度
+ 423   2              delay(100); 
+ 424   2        }
+ 425   1      } 
+C51 COMPILER V7.08   STC_LSM303DLH                                                         06/19/2011 23:40:18 PAGE 8   
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   1140    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     15       8
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----       1
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

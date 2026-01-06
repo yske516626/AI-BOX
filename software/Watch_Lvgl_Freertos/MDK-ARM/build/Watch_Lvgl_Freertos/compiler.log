@@ -1,0 +1,2112 @@
+>>> cc
+
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\BSP\MAX30102_HeartRate\HR_MAX30102.c: 1 warning, 0 errors
+".\..\BSP\IIC\IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\IIC\IIC.c", line 387: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\BSP\IIC\IIC.c: 2 warnings, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\BSP\AHT21_TemperatureHumidity\AHT21.c: 1 warning, 0 errors
+".\..\BSP\LCD_Screen\lcd.c", line 46: Warning:  #177-D: variable "i"  was declared but never referenced
+  	u16 i,j,width,height; 
+  	    ^
+".\..\BSP\LCD_Screen\lcd.c", line 46: Warning:  #177-D: variable "j"  was declared but never referenced
+  	u16 i,j,width,height; 
+  	      ^
+.\..\BSP\LCD_Screen\lcd.c: 2 warnings, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\MPU6050\MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+".\..\BSP\MPU6050\MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\MPU6050\MPU6050.c", line 415: Warning:  #223-D: function "printf" declared implicitly
+  	printf("%f\r\n", *ret);
+  	^
+".\..\BSP\MPU6050\MPU6050.c", line 419: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if (roll <= 0.50 && roll >= -0.50 && pitch <= 0.50 && pitch >= -0.50)
+  	    ^
+".\..\BSP\MPU6050\MPU6050.c", line 419: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if (roll <= 0.50 && roll >= -0.50 && pitch <= 0.50 && pitch >= -0.50)
+  	                                     ^
+".\..\BSP\MPU6050\MPU6050.c", line 422: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\BSP\MPU6050\MPU6050.c: 7 warnings, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\LSM303DLH_Compass\LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+".\..\BSP\LSM303DLH_Compass\LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+".\..\BSP\LSM303DLH_Compass\LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\BSP\LSM303DLH_Compass\LSM303.c", line 290: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Azimuth = atan2f(Hy, Hx) * 180.0 / pai;
+  	          ^
+.\..\BSP\LSM303DLH_Compass\LSM303.c: 5 warnings, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+".\..\BSP\SPL06001_AirPressure\SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 57: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 60: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 63: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 66: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 69: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 72: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 75: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 78: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 81: Warning:  #111-D: statement is unreachable
+          break;
+          ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 281: Warning:  #177-D: variable "none"  was declared but never referenced
+      unsigned int none = 0; /** Unused, do not set */
+                   ^
+".\..\BSP\SPL06001_AirPressure\SPL06.c", line 367: Warning:  #177-D: variable "Pre"  was declared but never referenced
+      double Pre;
+             ^
+.\..\BSP\SPL06001_AirPressure\SPL06.c: 21 warnings, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\TOUCH\touch.h", line 133: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\BSP\TOUCH\touch.c: 2 warnings, 0 errors
+".\..\BSP\MAX30102_HeartRate\HR_Algorithm.c", line 346: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      bw->v1 = (1.241106190967544882e-2*input)+(0.97517787618064910582 * bw->v0);
+                                                                         ^
+.\..\BSP\MAX30102_HeartRate\HR_Algorithm.c: 1 warning, 0 errors
+".\..\BSP\Control\Control.h", line 21: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\Control\Control.c", line 27: Warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+wake_port, 
+wake, RESET);
+  	                                     ^
+".\..\BSP\Control\Control.c", line 32: Warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+wake_port, 
+wake, SET);
+  	                                     ^
+".\..\BSP\Control\Control.c", line 54: Warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_3, RESET);  //????????????
+  	                                     ^
+".\..\BSP\Control\Control.c", line 59: Warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_3, SET); 
+  	                                     ^
+".\..\BSP\Control\Control.c", line 60: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\BSP\Control\Control.c: 6 warnings, 0 errors
+"../User/GUI/Screens/Include/../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_B_MenuPage.h", line 92: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_D_HearRatePage.h", line 27: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+"../User/Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+.\..\BSP\KEY\key.c: 19 warnings, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/mpu6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/mpu6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\MPU6050\eMPL\inv_mpu.c", line 2972: Warning:  #68-D: integer conversion resulted in a change of sign
+  		if(res)return -1; 
+  		              ^
+".\..\BSP\MPU6050\eMPL\inv_mpu.c", line 2883: Warning:  #177-D: variable "gyro_orientation"  was declared but never referenced
+  static signed char gyro_orientation[9] = { 1, 0, 0,
+                     ^
+.\..\BSP\MPU6050\eMPL\inv_mpu.c: 5 warnings, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c", line 101: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          s1[i].real = n_denom / 4.00;
+                       ^
+".\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c", line 104: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          s2[i].real = n_denom / 4.00;
+                       ^
+".\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c", line 111: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          s1[i].real = n_denom / 8.00;
+                       ^
+".\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c", line 114: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          s2[i].real = n_denom / 8.00;
+                       ^
+".\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c", line 155: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          float sp02_num = -45.060 * R * R + 30.354 * R + 94.845;
+                                                      ^
+".\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c", line 182: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      SpO2 = (SpO2 > 99.99) ? 99.99 : SpO2;
+              ^
+".\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c", line 182: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      SpO2 = (SpO2 > 99.99) ? 99.99 : SpO2;
+                                      ^
+".\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c", line 213: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\BSP\MAX30102_HeartRate\HR_Heart_SpO2.c: 9 warnings, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/TOUCH/TOUCH.h", line 133: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\Core\Src\main.c", line 71: Warning:  #1295-D: Deprecated declaration Test - give arg types
+  void Test();
+       ^
+.\..\Core\Src\main.c: 4 warnings, 0 errors
+".\..\Core\Src\stm32f4xx_it.c", line 256: Warning:  #223-D: function "printf" declared implicitly
+  			printf("Valid frame received: Command = 0x%02X\r\n", command);
+  			^
+".\..\Core\Src\stm32f4xx_it.c", line 262: Warning:  #223-D: function "printf" declared implicitly
+              printf("Invalid frame received. Length = %lu, Content: ", received_len);
+              ^
+.\..\Core\Src\stm32f4xx_it.c: 2 warnings, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\core\lv_event.c", line 120: Warning:  #188-D: enumerated type mixed with another type
+      return e->code & ~LV_EVENT_PREPROCESS;
+             ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\core\lv_event.c: 1 warning, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\flex\lv_flex.c", line 97: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_FLEX_MAIN_PLACE = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                               ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\flex\lv_flex.c", line 98: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_FLEX_CROSS_PLACE = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\flex\lv_flex.c", line 99: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_FLEX_TRACK_PLACE = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\flex\lv_flex.c: 3 warnings, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 134: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_COLUMN_DSC_ARRAY = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                     ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 135: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_ROW_DSC_ARRAY = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                  ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 136: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_COLUMN_ALIGN = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                 ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 137: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_ROW_ALIGN = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                              ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 139: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_CELL_ROW_SPAN = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                  ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 140: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_CELL_ROW_POS = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                 ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 141: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_CELL_COLUMN_SPAN = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                     ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 142: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_CELL_COLUMN_POS = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                    ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 143: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_CELL_X_ALIGN = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                 ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 144: Warning:  #188-D: enumerated type mixed with another type
+      LV_STYLE_GRID_CELL_Y_ALIGN = lv_style_register_prop() | 
+V_STYLE_PROP_LAYOUT_REFR;
+                                 ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 589: Warning:  #188-D: enumerated type mixed with another type
+      lv_grid_align_t col_align = get_cell_col_align(item);
+                                  ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c", line 590: Warning:  #188-D: enumerated type mixed with another type
+      lv_grid_align_t row_align = get_cell_row_align(item);
+                                  ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\extra\layouts\grid\lv_grid.c: 12 warnings, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\draw\sw\lv_draw_sw_rect.c", line 239: Warning:  #546-D: transfer of control bypasses initialization of:
+            variable "mask_any_center"  (declared at line 286)
+          goto bg_clean_up;
+          ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\draw\sw\lv_draw_sw_rect.c: 1 warning, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\themes\default\lv_theme_default.c", line 213: Warning:  #188-D: enumerated type mixed with another type
+          0
+          ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\extra\themes\default\lv_theme_default.c: 1 warning, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\font\lv_font_fmt_txt.c", line 137: Warning:  #111-D: statement is unreachable
+      return NULL;
+      ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\font\lv_font_fmt_txt.c: 1 warning, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\qrcode\qrcodegen.c", line 278: Warning:  #188-D: enumerated type mixed with another type
+  	applyMask(tempBuffer, qrcode, mask);
+  	                              ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\qrcode\qrcodegen.c", line 279: Warning:  #188-D: enumerated type mixed with another type
+  	drawFormatBits(ecl, mask, qrcode);
+  	                    ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\extra\libs\qrcode\qrcodegen.c: 2 warnings, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\hal\lv_hal_disp.c", line 573: Warning:  #188-D: enumerated type mixed with another type
+      return disp->driver->rotated;
+             ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\hal\lv_hal_disp.c: 1 warning, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_lru.c", line 313: Warning:  #68-D: integer conversion resulted in a change of sign
+      uint32_t i = 0, min_index = -1;
+                                  ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_lru.c", line 314: Warning:  #68-D: integer conversion resulted in a change of sign
+      uint64_t min_access_count = -1;
+                                  ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_lru.c: 2 warnings, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_style.c", line 74: Warning:  #188-D: enumerated type mixed with another type
+      return act_id;
+             ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_style.c: 1 warning, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_tlsf.c", line 898: Warning:  #68-D: integer conversion resulted in a change of sign
+          offset_to_block(pool, -(int)block_header_overhead);
+                                ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_tlsf.c", line 1000: Warning:  #68-D: integer conversion resulted in a change of sign
+      block = offset_to_block(mem, -(tlsfptr_t)block_header_overhead);
+                                   ^
+".\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_tlsf.c", line 1018: Warning:  #68-D: integer conversion resulted in a change of sign
+      block_header_t * block = offset_to_block(pool, -(int)block_header_overhead);
+                                                     ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_tlsf.c: 3 warnings, 0 errors
+".\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_mem.c", line 311: Warning:  #111-D: statement is unreachable
+      return NULL;
+      ^
+.\..\Middlewares\LVGL\GUI\lvgl\src\misc\lv_mem.c: 1 warning, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/TOUCH/touch.h", line 133: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\Middlewares\LVGL\GUI\porting\lv_port_indev.c: 2 warnings, 0 errors
+"../Test/Include/serial.h", line 12: Warning:  #1295-D: Deprecated declaration SPL_Test - give arg types
+  void SPL_Test();
+       ^
+".\..\Test\Src\serial.c", line 386: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\Test\Src\serial.c: 2 warnings, 0 errors
+".\..\User\GUI\Font\../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Font\ui_font_Cuyuan18.c: 1 warning, 0 errors
+".\..\User\GUI\Font\../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Font\ui_font_Cuyuan48.c: 1 warning, 0 errors
+".\..\User\GUI\Font\../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Font\ui_font_Cuyuan20.c: 1 warning, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/TOUCH/touch.h", line 133: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../Test/Include/serial.h", line 12: Warning:  #1295-D: Deprecated declaration SPL_Test - give arg types
+  void SPL_Test();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+"../Test/Include/HardwareTest.h", line 32: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\Test\Src\HardwareTest.c", line 182: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			com += 360.0;
+  			^
+".\..\Test\Src\HardwareTest.c", line 169: Warning:  #177-D: variable "Temp"  was declared but never referenced
+  	int16_t Temp;
+  	        ^
+".\..\Test\Src\HardwareTest.c", line 170: Warning:  #177-D: variable "angle"  was declared but never referenced
+  	float angle;
+  	      ^
+".\..\Test\Src\HardwareTest.c", line 229: Warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned long *"
+  		dmp_get_pedometer_step_count(&count);
+  		                             ^
+".\..\Test\Src\HardwareTest.c", line 234: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\Test\Src\HardwareTest.c: 24 warnings, 0 errors
+".\..\User\GUI\Font\../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Font\ui_font_Cuyuan38.c: 1 warning, 0 errors
+".\..\User\Func\Src\../Include/../../GUI/../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\Func\Src\../Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\Func\Src\../../GUI/Screens/Include/UI_B_MenuPage.h", line 92: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\Func\Src\FuncUiPageManage.c: 3 warnings, 0 errors
+".\..\User\GUI\Font\../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Font\ui_font_Cuyuan80.c: 1 warning, 0 errors
+"../Test/Include/serial.h", line 12: Warning:  #1295-D: Deprecated declaration SPL_Test - give arg types
+  void SPL_Test();
+       ^
+"../Test/Include/test_one.h", line 10: Warning:  #1295-D: Deprecated declaration Test - give arg types
+  void Test();
+       ^
+"../Test/Include/test_one.h", line 12: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/TOUCH/touch.h", line 133: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../Test/Include/serial.h", line 12: Warning:  #1295-D: Deprecated declaration SPL_Test - give arg types
+  void SPL_Test();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+"../Test/Include/HardwareTest.h", line 32: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\Test\Src\test_one.c", line 82: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\Test\Src\test_one.c: 23 warnings, 0 errors
+".\..\User\GUI\Font\../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Font\ui_font_Cuyuan30.c: 1 warning, 0 errors
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\Func\Src\../Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+"../User/GUI/Screens/Include/../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\Func\Src\FuncHWDataManage.c", line 186: Warning:  #111-D: statement is unreachable
+           return 0;
+           ^
+".\..\User\Func\Src\FuncHWDataManage.c", line 199: Warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned long *"
+  		dmp_get_pedometer_step_count(&count);
+  		                             ^
+".\..\User\Func\Src\FuncHWDataManage.c", line 202: Warning:  #111-D: statement is unreachable
+      return -1;
+      ^
+".\..\User\Func\Src\FuncHWDataManage.c", line 248: Warning:  #111-D: statement is unreachable
+  	return -1;
+  	^
+".\..\User\Func\Src\FuncHWDataManage.c", line 248: Warning:  #68-D: integer conversion resulted in a change of sign
+  	return -1;
+  	       ^
+".\..\User\Func\Src\FuncHWDataManage.c", line 291: Warning:  #111-D: statement is unreachable
+  	return -1;
+  	^
+".\..\User\Func\Src\FuncHWDataManage.c", line 291: Warning:  #68-D: integer conversion resulted in a change of sign
+  	return -1;
+  	       ^
+".\..\User\Func\Src\FuncHWDataManage.c", line 434: Warning:  #1-D: last line of file ends without a newline
+  };
+    ^
+".\..\User\Func\Src\FuncHWDataManage.c", line 395: Warning:  #144-D: a value of type "int (*)(void)" cannot be used to initialize an entity of type "int (*)(unsigned long)"
+          .SetSteps = HW_MPU6050_Set_Steps,
+                      ^
+.\..\User\Func\Src\FuncHWDataManage.c: 26 warnings, 0 errors
+".\..\User\GUI\Font\../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Font\ui_font_Cuyuan24.c: 1 warning, 0 errors
+".\..\User\GUI\Imgs\../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Imgs\ui_img_compass_needle_png.c: 1 warning, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_B_MenuPage.h", line 92: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 154: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(value_strbuf, "%2d", ui_TimeHourValue);
+                      ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 155: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              lv_label_set_text(ui_TimeHourLabel, value_strbuf);
+                                                  ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 160: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(value_strbuf, "%2d", ui_TimeMinuteValue);
+                      ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 161: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              lv_label_set_text(ui_TimeMinuteLabel, value_strbuf);
+                                                    ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 170: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(value_strbuf, "%2d", ui_DateDayValue);
+                      ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 171: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              lv_label_set_text(Date_Num_Label, value_strbuf);
+                                                ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 180: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(value_strbuf, "%d", ui_TempValue);
+                      ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 181: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              lv_label_set_text(Tem_Num_Label, value_strbuf);
+                                               ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 195: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(value_strbuf, "%d", ui_HeartRate_Num);
+                      ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 196: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              lv_label_set_text(HeartRate_Num_Label, value_strbuf);
+                                                     ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 203: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(value_strbuf, "%d", Foots_Num);
+                      ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 204: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              lv_label_set_text(Foots_Num_Label, value_strbuf);
+                                                 ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 428: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%2d",ui_TempValue);
+              ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 429: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(Tem_Num_Label, value_strbuf);
+                                       ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 473: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%2d",ui_TimeHourValue);  //???????€???????????????????
+              ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 474: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_TimeHourLabel, value_strbuf);
+                                          ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 495: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%2d",ui_TimeMinuteValue);  //???????€???????????????????
+              ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 496: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_TimeMinuteLabel, value_strbuf);
+                                            ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 537: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%2d",ui_DateDayValue);  //???????€???????????????????
+              ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 538: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(Date_Num_Label, value_strbuf);
+                                        ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 591: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(value_strbuf, "%2d", ui_HeartRate_Num);  
+                  ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 592: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+          lv_label_set_text(HeartRate_Num_Label, value_strbuf);
+                                                 ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 664: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(value_strbuf, "%2d", Foots_Num);  //???????€???????????????????
+                  ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 665: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+          lv_label_set_text(Foots_Num_Label, value_strbuf);
+                                             ^
+".\..\User\GUI\Screens\Src\UI_A_HomePage.c", line 898: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_A_HomePage.c: 43 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_H_CompassPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_H_CompassPage.c", line 114: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,":%d", HWInterface.Ecompass.direction);
+              ^
+".\..\User\GUI\Screens\Src\UI_H_CompassPage.c", line 116: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(CompassPage_DirLabel, value_strbuf);
+                                              ^
+".\..\User\GUI\Screens\Src\UI_H_CompassPage.c", line 136: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,":%dm", HWInterface.Barometer.altitude); //??????
+              ^
+".\..\User\GUI\Screens\Src\UI_H_CompassPage.c", line 138: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(CompassPage_AltitudeLabel, value_strbuf);
+                                                   ^
+".\..\User\GUI\Screens\Src\UI_H_CompassPage.c", line 150: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_H_CompassPage.c: 23 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_B_MenuPage.h", line 92: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_C_Calender.h", line 20: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_D_HearRatePage.h", line 27: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../include/UI_F_Calculatorpage.h", line 68: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../include/UI_H_CompassPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../include/UI_J_EnvPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../include/UI_M_MottionPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../include/UI_N_SettingPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_Q_AiPage.h", line 13: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_B_MenuPage.c", line 867: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+".\..\User\GUI\Screens\Src\UI_B_MenuPage.c", line 866: Warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t i = 0;
+              ^
+.\..\User\GUI\Screens\Src\UI_B_MenuPage.c: 28 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_J_EnvPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 39: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%d", HWInterface.AHT21.temperature);
+              ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 40: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(EnvPage_TemLabel, value_strbuf);
+                                          ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 41: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%d", HWInterface.AHT21.humidity);
+              ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 42: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(EnvPage_HumiLabel, value_strbuf);
+                                           ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 88: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  	sprintf(strbuf,"%d",HWInterface.AHT21.temperature);
+  	        ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 89: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(EnvPage_TemLabel, strbuf);
+                                          ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 134: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  	sprintf(strbuf,"%d", HWInterface.AHT21.humidity);
+  	        ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 135: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(EnvPage_HumiLabel, strbuf);
+                                           ^
+".\..\User\GUI\Screens\Src\UI_J_EnvPage.c", line 171: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_J_EnvPage.c: 27 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_M_MottionPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\../include/UI_B_MenuPage.h", line 92: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\UI_M_MottionPage.c", line 109: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_M_MottionPage.c: 20 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_N_SettingPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_O_SetFunAchPage.h", line 26: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_N_SettingPage.c", line 282: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_N_SettingPage.c: 20 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_O_SetFunAchPage.h", line 26: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+.\..\User\GUI\Screens\Src\UI_O_SetFunAchPage.c: 18 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_C_Calender.h", line 20: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_C_Calender.c", line 60: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_C_Calender.c: 19 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_N_SettingPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_Q_AiPage.h", line 13: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_Q_AiPage.c", line 60: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_Q_AiPage.c: 20 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_N_SettingPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+.\..\User\GUI\Screens\Src\UI_P_SetDatePage.c: 18 warnings, 0 errors
+".\..\User\GUI\../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\ui_helpers.c", line 66: Warning:  #188-D: enumerated type mixed with another type
+      lv_bar_set_value(target, old + val, anm);
+                                          ^
+".\..\User\GUI\ui_helpers.c", line 72: Warning:  #188-D: enumerated type mixed with another type
+      lv_slider_set_value(target, old + val, anm);
+                                             ^
+.\..\User\GUI\ui_helpers.c: 3 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\ui_G_TimerPage.c", line 100: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(strbuf,"%02d",TimerPage_Min);
+              ^
+".\..\User\GUI\Screens\Src\ui_G_TimerPage.c", line 101: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(TimerPage_MinLabel, strbuf);
+                                            ^
+".\..\User\GUI\Screens\Src\ui_G_TimerPage.c", line 102: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(strbuf,"%02d",TimerPage_Sec);
+              ^
+".\..\User\GUI\Screens\Src\ui_G_TimerPage.c", line 103: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(TimerPage_SecondLabel, strbuf);
+                                               ^
+".\..\User\GUI\Screens\Src\ui_G_TimerPage.c", line 104: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(strbuf,"%02d",TimerPage_10ms);
+              ^
+".\..\User\GUI\Screens\Src\ui_G_TimerPage.c", line 105: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(TimerPage_MillLabel, strbuf);
+                                             ^
+".\..\User\GUI\Screens\Src\ui_G_TimerPage.c", line 209: Warning:  #1-D: last line of file ends without a newline
+   }
+    ^
+.\..\User\GUI\Screens\Src\ui_G_TimerPage.c: 24 warnings, 0 errors
+".\..\User\GUI\../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\ui.c", line 16: Warning:  #177-D: function "main_timer"  was declared but never referenced
+  static void main_timer(lv_timer_t * timer)
+              ^
+.\..\User\GUI\ui.c: 2 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../Include/../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_F_CalculatorPage.h", line 68: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\GUI\Screens\Src\UI_F_CalculatorPage.c: 2 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_L_2048Page.h", line 21: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+.\..\User\GUI\Screens\Src\UI_K_GamePage.c: 18 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_B_MenuPage.h", line 92: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_I_nfcPage.c", line 105: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_I_nfcPage.c: 19 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_D_HearRatePage.h", line 27: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_D_HearRatePage.c", line 28: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf, "%d", HWInterface.HR_meter.HeartRate);
+              ^
+".\..\User\GUI\Screens\Src\UI_D_HearRatePage.c", line 29: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(HRpage_HRNum_Label, value_strbuf);
+                                            ^
+".\..\User\GUI\Screens\Src\UI_D_HearRatePage.c", line 78: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf, "%d", HWInterface.HR_meter.HeartRate);
+              ^
+".\..\User\GUI\Screens\Src\UI_D_HearRatePage.c", line 79: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(HRpage_HRNum_Label, value_strbuf);
+                                            ^
+".\..\User\GUI\Screens\Src\UI_D_HearRatePage.c", line 110: Warning:  #167-D: argument of type "void (*)(lv_event_cb_t *)" is incompatible with parameter of type "lv_timer_cb_t"
+      Menu_HRPageTimer = lv_timer_create(HRPage_timer_cb, 50,  
+ULL);
+                                         ^
+".\..\User\GUI\Screens\Src\UI_D_HearRatePage.c", line 111: Warning:  #167-D: argument of type "void (*)(lv_event_cb_t *)" is incompatible with parameter of type "lv_event_cb_t"
+      lv_obj_add_event_cb(Menu_HeatRatePage, HeartRate_Return_Menu, LV_EVENT_GESTURE, 
+ULL);
+                                             ^
+".\..\User\GUI\Screens\Src\UI_D_HearRatePage.c", line 119: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_D_HearRatePage.c: 25 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_E_SPO2Page.c", line 35: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf, "%d", HWInterface.HR_meter.SPO2);
+              ^
+".\..\User\GUI\Screens\Src\UI_E_SPO2Page.c", line 36: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(SPO2page_SPO2Num_Label, value_strbuf);
+                                                ^
+".\..\User\GUI\Screens\Src\UI_E_SPO2Page.c", line 76: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf, "%d", HWInterface.HR_meter.SPO2);
+              ^
+".\..\User\GUI\Screens\Src\UI_E_SPO2Page.c", line 77: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(SPO2page_SPO2Num_Label, value_strbuf);
+                                                ^
+".\..\User\GUI\Screens\Src\UI_E_SPO2Page.c", line 108: Warning:  #167-D: argument of type "void (*)(lv_event_cb_t *)" is incompatible with parameter of type "lv_timer_cb_t"
+      Menu_SPO2PageTimer = lv_timer_create(SPO2Page_timer_cb, 50,  
+ULL);
+                                           ^
+".\..\User\GUI\Screens\Src\UI_E_SPO2Page.c", line 109: Warning:  #167-D: argument of type "void (*)(lv_event_cb_t *)" is incompatible with parameter of type "lv_event_cb_t"
+      lv_obj_add_event_cb(Menu_SPO2Page, SPO2_Return_Menu, LV_EVENT_GESTURE, 
+ULL);
+                                         ^
+".\..\User\GUI\Screens\Src\UI_E_SPO2Page.c", line 118: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\GUI\Screens\Src\UI_E_SPO2Page.c: 24 warnings, 0 errors
+"../User/Task/include/Task_Control.h", line 15: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/Control/Control.h", line 21: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Func/Include/../../GUI/../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_Q_AiPage.h", line 13: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\Task\src\Task_Contorl.c: 5 warnings, 0 errors
+"../User/Task/include/Task_Key.h", line 15: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Task/include/Task_PageLoad.h", line 11: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Task/include/Task_HardwareInit.h", line 15: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Task/include/Task_SensorUpdate.h", line 19: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Task/include/Task_Control.h", line 15: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\Task\src\TaskInit.c: 6 warnings, 0 errors
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\GUI\Screens\Src\../Include/UI_L_2048Page.h", line 21: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+".\..\User\GUI\Screens\Src\../../../Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 105: Warning:  #167-D: argument of type "char **" is incompatible with parameter of type "const char **"
+  							lv_btnmatrix_set_map(ui_Game2048BtnM, Game_2048.btnm_map);
+  							                                      ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 107: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  							sprintf(strbuf,"Score:%d",Game_2048.score);
+  							        ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 108: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+  							lv_label_set_text(ui_Game2048ScLabel,strbuf);
+  							                                     ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 124: Warning:  #186-D: pointless comparison of unsigned integer with zero
+          if((dsc->id >= 0) && (dsc->label_dsc))
+                      ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 153: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+        sprintf(strbuf,"Score:%d",Game_2048.score);
+                ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 154: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+        lv_label_set_text(ui_Game2048ScLabel,strbuf);
+                                             ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 188: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(strbuf,"Score:%d",Game_2048.score);
+              ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 189: Warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_Game2048ScLabel,strbuf);
+                                           ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 220: Warning:  #167-D: argument of type "char **" is incompatible with parameter of type "const char **"
+      lv_btnmatrix_set_map(ui_Game2048BtnM, Game_2048.btnm_map);
+                                            ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 547: Warning:  #68-D: integer conversion resulted in a change of sign
+      {return -1;}
+              ^
+".\..\User\GUI\Screens\Src\UI_L_2048Page.c", line 556: Warning:  #68-D: integer conversion resulted in a change of sign
+      {return -1;}
+              ^
+.\..\User\GUI\Screens\Src\UI_L_2048Page.c: 29 warnings, 0 errors
+"../User/GUI/Screens/Include/../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_D_HearRatePage.h", line 27: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Task/include/Task_Key.h", line 15: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\Task\src\Task_Key.c", line 30: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\Task\src\Task_Key.c: 4 warnings, 0 errors
+"../User/GUI/../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+"../User/Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+"../BSP/TOUCH/touch.h", line 133: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Task/include/Task_HardwareInit.h", line 15: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\Task\src\Task_HardwareInit.c", line 31: Warning:  #223-D: function "LED_Init" declared implicitly
+  		LED_Init();
+  		^
+".\..\User\Task\src\Task_HardwareInit.c", line 83: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\Task\src\Task_HardwareInit.c: 21 warnings, 0 errors
+"../User/Task/include/Task_PageLoad.h", line 11: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Func/Include/../../GUI/../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_B_MenuPage.h", line 92: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\Task\src\Task_PageLoad.c", line 43: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\Task\src\Task_PageLoad.c: 5 warnings, 0 errors
+"../User/GUI/Screens/Include/../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_O_SetFunAchPage.h", line 26: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+"../User/Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+"../BSP/TOUCH/touch.h", line 133: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+".\..\User\Task\src\Task_Status.c", line 103: Warning:  #223-D: function "SystemClock_Config" declared implicitly
+  			SystemClock_Config();
+  			^
+".\..\User\Task\src\Task_Status.c", line 152: Warning:  #1-D: last line of file ends without a newline
+  }
+   ^
+.\..\User\Task\src\Task_Status.c: 21 warnings, 0 errors
+"../User/GUI/Screens/Include/../../../Func/Include/FuncUiPageManage.h", line 34: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_B_MenuPage.h", line 92: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_D_HearRatePage.h", line 27: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_H_CompassPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_J_EnvPage.h", line 18: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../User/GUI/Screens/Include/UI_O_SetFunAchPage.h", line 26: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/IIC/IIC.h", line 55: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/MPU6050/MPU6050.h", line 92: Warning:  #1295-D: Deprecated declaration MPU6050_INT_Pin_Init - give arg types
+  void MPU6050_INT_Pin_Init();
+       ^
+"../BSP/MPU6050/MPU6050.h", line 128: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 157: Warning:  #1295-D: Deprecated declaration Get_Praw_SC - give arg types
+  double Get_Praw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 158: Warning:  #1295-D: Deprecated declaration Get_Traw_SC - give arg types
+  double Get_Traw_SC();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 161: Warning:  #1295-D: Deprecated declaration SPL_init - give arg types
+  uint8_t SPL_init(); //???????????????
+          ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 162: Warning:  #1295-D: Deprecated declaration Temperature_Calculate - give arg types
+  double Temperature_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 163: Warning:  #1295-D: Deprecated declaration Pressure_CalculateMbar - give arg types
+  double Pressure_CalculateMbar();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 164: Warning:  #1295-D: Deprecated declaration Altitude_Calculate - give arg types
+  double Altitude_Calculate();
+         ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 165: Warning:  #1295-D: Deprecated declaration SPL_Wakeup - give arg types
+  void SPL_Wakeup();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 166: Warning:  #1295-D: Deprecated declaration SPL_Sleep - give arg types
+  void SPL_Sleep();
+       ^
+"../BSP/SPL06001_AirPressure/SPL06.h", line 169: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 67: Warning:  #1295-D: Deprecated declaration LSM303DLH_Init - give arg types
+  unsigned char LSM303DLH_Init();
+                ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 68: Warning:  #1295-D: Deprecated declaration LSM303DLH_Sleep - give arg types
+  void LSM303DLH_Sleep();
+       ^
+"../BSP/LSM303DLH_Compass/LSM303.h", line 69: Warning:  #1295-D: Deprecated declaration LSM303DLH_Wakeup - give arg types
+  void LSM303DLH_Wakeup();
+       ^
+"../User/Func/Include/FuncHWDataManage.h", line 180: Warning:  #65-D: expected a ";"
+  }; //?????????????€????????????????????????????
+  ^
+"../User/Task/include/Task_SensorUpdate.h", line 19: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+.\..\User\Task\src\Task_SensorUpdate.c: 23 warnings, 0 errors
+
+>>> ld
+
+Program Size: Code=197112 RO-data=144388 RW-data=2440 ZI-data=114536  

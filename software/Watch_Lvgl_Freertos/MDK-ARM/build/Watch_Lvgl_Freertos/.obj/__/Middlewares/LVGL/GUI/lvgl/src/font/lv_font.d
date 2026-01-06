@@ -1,0 +1,12 @@
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.c
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../lv_conf_internal.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../lv_conf_kconfig.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../../../lv_conf.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\lv_symbol_def.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../misc/lv_area.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../misc/lv_utils.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../misc/lv_log.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../misc/lv_types.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../misc/lv_assert.h
+.\build\Watch_Lvgl_Freertos\.obj\__\Middlewares\LVGL\GUI\lvgl\src\font\lv_font.o: .\..\Middlewares\LVGL\GUI\lvgl\src\font\../misc/lv_mem.h

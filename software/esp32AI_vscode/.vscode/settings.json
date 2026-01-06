@@ -1,0 +1,22 @@
+{
+	"idf.customExtraVars": {
+		"IDF_TARGET": "esp32s3"
+	},
+	"idf.openOcdConfigs": [
+		"interface/ftdi/esp32_devkitj_v1.cfg",
+		"target/esp32s3.cfg"
+	],
+	"files.associations": {
+		"ostream": "cpp",
+		"array": "cpp",
+		"deque": "cpp",
+		"string": "cpp",
+		"unordered_map": "cpp",
+		"unordered_set": "cpp",
+		"vector": "cpp",
+		"string_view": "cpp",
+		"initializer_list": "cpp",
+		"regex": "cpp",
+		"*.tcc": "cpp"
+	}
+}

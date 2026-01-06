@@ -1,0 +1,14 @@
+---- apply_cb Matches (22 in 7 files) ----
+lv_example_style_14.c (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\examples\styles) line 9 : static void new_theme_apply_cb(lv_theme_t * th, lv_obj_t * obj)
+new_theme_init_and_set in lv_example_style_14.c (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\examples\styles) :     lv_theme_set_apply_cb(&th_new, new_theme_apply_cb);
+lv_example_style_14.ExampleStyle_14 in lv_example_style_14.py (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\examples\styles) :     def new_theme_apply_cb(self, th, obj):
+lv_example_style_14.ExampleStyle_14.new_theme_init_and_set in lv_example_style_14.py (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\examples\styles) :         self.th_new.set_apply_cb(self.new_theme_apply_cb)
+lv_theme.c (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\core) line 75 : void lv_theme_set_apply_cb(lv_theme_t * theme, lv_theme_apply_cb_t apply_cb)
+lv_theme_set_apply_cb in lv_theme.c (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\core) :     theme->apply_cb = apply_cb;
+apply_theme in lv_theme.c (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\core) :     if(th->apply_cb) th->apply_cb(th, obj);
+lv_theme.h (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\core) line 29 : typedef void (*lv_theme_apply_cb_t)(struct _lv_theme_t *, lv_obj_t *);
+_lv_theme_t in lv_theme.h (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\core) :     lv_theme_apply_cb_t apply_cb;
+lv_theme.h (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\core) line 76 : void lv_theme_set_apply_cb(lv_theme_t * theme, lv_theme_apply_cb_t apply_cb);
+lv_theme_basic_init in lv_theme_basic.c (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\extra\themes\basic) :     theme.apply_cb = theme_apply;
+lv_theme_default_init in lv_theme_default.c (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\extra\themes\default) :     theme.apply_cb = theme_apply;
+lv_theme_mono_init in lv_theme_mono.c (D:\project-study\嵌入式\百问网资料\01_all_series_quickstart\LVGL\02_程序源码\02_项目模板\00_lv_100ask_sim_codeblocks_win\lvgl\src\extra\themes\mono) :     theme.apply_cb = theme_apply;

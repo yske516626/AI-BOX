@@ -1,0 +1,725 @@
+BL51 BANKED LINKER/LOCATER V5.03                                                        06/19/2011  23:40:18  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V5.03, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE STARTUP.obj, STC_LSM303DLH.obj TO STC_LSM303DLH
+
+
+MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  STARTUP.obj (?C_STARTUP)
+  STC_LSM303DLH.obj (STC_LSM303DLH)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPADD)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPMUL)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPDIV)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FCAST)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?CASTF)
+  C:\KEIL\C51\LIB\C51FPS.LIB (ATAN2)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPCMP)
+  C:\KEIL\C51\LIB\C51FPS.LIB (ATAN)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPSERIES)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?LNEG)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?LLDCODE)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?LLDCODE0)
+
+
+LINK MAP OF MODULE:  STC_LSM303DLH (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0014H     UNIT         _DATA_GROUP_
+                    001CH     0004H                  *** GAP ***
+            BIT     0020H.0   0000H.2   UNIT         _BIT_GROUP_
+                    0020H.2   0000H.6                *** GAP ***
+            DATA    0021H     000FH     UNIT         ?DT?STC_LSM303DLH
+            IDATA   0030H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     049AH     UNIT         ?C?LIB_CODE
+            CODE    049DH     0128H     UNIT         ?PR?ATAN?ATAN
+            CODE    05C5H     00B7H     UNIT         ?PR?DISPLAY_ANGLE?STC_LSM303DLH
+            CODE    067CH     0094H     UNIT         ?PR?_CONVERSION?STC_LSM303DLH
+            CODE    0710H     0076H     UNIT         ?PR?DISPLAY_Z?STC_LSM303DLH
+            CODE    0786H     0073H     UNIT         ?PR?DISPLAY_Y?STC_LSM303DLH
+            CODE    07F9H     0073H     UNIT         ?PR?_ATAN2?ATAN2
+            CODE    086CH     0072H     UNIT         ?PR?DISPLAY_X?STC_LSM303DLH
+            CODE    08DEH     003AH     UNIT         ?PR?MAIN?STC_LSM303DLH
+            CODE    0918H     002CH     UNIT         ?PR?_LSM303_SENDBYTE?STC_LSM303DLH
+            CODE    0944H     0024H     UNIT         ?PR?_MULTIPLE_READ?STC_LSM303DLH
+            CODE    0968H     0020H     UNIT         ?PR?_DELAY?STC_LSM303DLH
+            CODE    0988H     001FH     UNIT         ?PR?_DISPLAYONECHAR?STC_LSM303DLH
+            CODE    09A7H     001EH     UNIT         ?PR?LSM303_RECVBYTE?STC_LSM303DLH
+            CODE    09C5H     001BH     UNIT         ?PR?INITLCD?STC_LSM303DLH
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 2
+
+
+            CODE    09E0H     0017H     UNIT         ?PR?_SINGLE_WRITE?STC_LSM303DLH
+            CODE    09F7H     0015H     UNIT         ?PR?_WRITECOMMANDLCM?STC_LSM303DLH
+            CODE    0A0CH     0014H     UNIT         ?PR?WAITFORENABLE?STC_LSM303DLH
+            CODE    0A20H     0012H     UNIT         ?PR?_WRITEDATALCM?STC_LSM303DLH
+            CODE    0A32H     0012H     UNIT         ?PR?_SINGLE_READ?STC_LSM303DLH
+            CODE    0A44H     0011H     UNIT         ?PR?DELAY5US?STC_LSM303DLH
+            CODE    0A55H     000FH     UNIT         ?PR?DELAY5MS?STC_LSM303DLH
+            CODE    0A64H     000FH     UNIT         ?PR?LSM303_START?STC_LSM303DLH
+            CODE    0A73H     000EH     UNIT         ?PR?LSM303_SENDACK?STC_LSM303DLH
+            CODE    0A81H     000DH     UNIT         ?PR?LSM303_RECVACK?STC_LSM303DLH
+            CODE    0A8EH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0A9AH     000CH     UNIT         ?PR?LSM303_STOP?STC_LSM303DLH
+            CODE    0AA6H     0009H     UNIT         ?PR?INIT_LSM303A?STC_LSM303DLH
+            CODE    0AAFH     0009H     UNIT         ?PR?INIT_LSM303M?STC_LSM303DLH
+
+
+
+OVERLAY MAP OF MODULE:   STC_LSM303DLH (?C_STARTUP)
+
+
+SEGMENT                                       BIT_GROUP          DATA_GROUP 
+  +--> CALLED SEGMENT                      START    LENGTH     START    LENGTH
+------------------------------------------------------------------------------
+?C_C51STARTUP                              -----    -----      -----    -----
+  +--> ?PR?MAIN?STC_LSM303DLH
+
+?PR?MAIN?STC_LSM303DLH                     -----    -----      -----    -----
+  +--> ?PR?_DELAY?STC_LSM303DLH
+  +--> ?PR?INITLCD?STC_LSM303DLH
+  +--> ?PR?INIT_LSM303A?STC_LSM303DLH
+  +--> ?PR?INIT_LSM303M?STC_LSM303DLH
+  +--> ?PR?DISPLAY_X?STC_LSM303DLH
+  +--> ?PR?DISPLAY_Y?STC_LSM303DLH
+  +--> ?PR?DISPLAY_Z?STC_LSM303DLH
+  +--> ?PR?_MULTIPLE_READ?STC_LSM303DLH
+  +--> ?PR?DISPLAY_ANGLE?STC_LSM303DLH
+
+?PR?INITLCD?STC_LSM303DLH                  -----    -----      -----    -----
+  +--> ?PR?_WRITECOMMANDLCM?STC_LSM303DLH
+
+?PR?_WRITECOMMANDLCM?STC_LSM303DLH         -----    -----      -----    -----
+  +--> ?PR?WAITFORENABLE?STC_LSM303DLH
+
+?PR?INIT_LSM303A?STC_LSM303DLH             -----    -----      -----    -----
+  +--> ?PR?_SINGLE_WRITE?STC_LSM303DLH
+
+?PR?_SINGLE_WRITE?STC_LSM303DLH            -----    -----      -----    -----
+  +--> ?PR?LSM303_START?STC_LSM303DLH
+  +--> ?PR?_LSM303_SENDBYTE?STC_LSM303DLH
+  +--> ?PR?LSM303_STOP?STC_LSM303DLH
+
+?PR?LSM303_START?STC_LSM303DLH             -----    -----      -----    -----
+  +--> ?PR?DELAY5US?STC_LSM303DLH
+
+?PR?_LSM303_SENDBYTE?STC_LSM303DLH         -----    -----      -----    -----
+  +--> ?PR?LSM303_START?STC_LSM303DLH
+  +--> ?PR?DELAY5US?STC_LSM303DLH
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 3
+
+
+  +--> ?PR?LSM303_RECVACK?STC_LSM303DLH
+
+?PR?LSM303_RECVACK?STC_LSM303DLH           -----    -----      -----    -----
+  +--> ?PR?DELAY5US?STC_LSM303DLH
+
+?PR?LSM303_STOP?STC_LSM303DLH              -----    -----      -----    -----
+  +--> ?PR?DELAY5US?STC_LSM303DLH
+
+?PR?INIT_LSM303M?STC_LSM303DLH             -----    -----      -----    -----
+  +--> ?PR?_SINGLE_WRITE?STC_LSM303DLH
+
+?PR?DISPLAY_X?STC_LSM303DLH                -----    -----      -----    -----
+  +--> ?PR?_SINGLE_READ?STC_LSM303DLH
+  +--> ?PR?_DISPLAYONECHAR?STC_LSM303DLH
+  +--> ?PR?_CONVERSION?STC_LSM303DLH
+
+?PR?_SINGLE_READ?STC_LSM303DLH             -----    -----      -----    -----
+  +--> ?PR?_LSM303_SENDBYTE?STC_LSM303DLH
+  +--> ?PR?LSM303_RECVBYTE?STC_LSM303DLH
+  +--> ?PR?LSM303_SENDACK?STC_LSM303DLH
+  +--> ?PR?LSM303_STOP?STC_LSM303DLH
+
+?PR?LSM303_RECVBYTE?STC_LSM303DLH          -----    -----      -----    -----
+  +--> ?PR?DELAY5US?STC_LSM303DLH
+
+?PR?LSM303_SENDACK?STC_LSM303DLH           0020H.0  0000H.1    -----    -----
+  +--> ?PR?DELAY5US?STC_LSM303DLH
+
+?PR?_DISPLAYONECHAR?STC_LSM303DLH          -----    -----      -----    -----
+  +--> ?PR?_WRITECOMMANDLCM?STC_LSM303DLH
+  +--> ?PR?_WRITEDATALCM?STC_LSM303DLH
+
+?PR?_WRITEDATALCM?STC_LSM303DLH            -----    -----      -----    -----
+  +--> ?PR?WAITFORENABLE?STC_LSM303DLH
+
+?PR?DISPLAY_Y?STC_LSM303DLH                -----    -----      -----    -----
+  +--> ?PR?_SINGLE_READ?STC_LSM303DLH
+  +--> ?PR?_DISPLAYONECHAR?STC_LSM303DLH
+  +--> ?PR?_CONVERSION?STC_LSM303DLH
+
+?PR?DISPLAY_Z?STC_LSM303DLH                -----    -----      -----    -----
+  +--> ?PR?_SINGLE_READ?STC_LSM303DLH
+  +--> ?PR?_DISPLAYONECHAR?STC_LSM303DLH
+  +--> ?PR?_CONVERSION?STC_LSM303DLH
+
+?PR?_MULTIPLE_READ?STC_LSM303DLH           -----    -----      -----    -----
+  +--> ?PR?_LSM303_SENDBYTE?STC_LSM303DLH
+  +--> ?PR?LSM303_RECVBYTE?STC_LSM303DLH
+  +--> ?PR?LSM303_SENDACK?STC_LSM303DLH
+  +--> ?PR?LSM303_STOP?STC_LSM303DLH
+  +--> ?PR?DELAY5MS?STC_LSM303DLH
+
+?PR?DISPLAY_ANGLE?STC_LSM303DLH            -----    -----      0008H    0008H
+  +--> ?PR?_ATAN2?ATAN2
+  +--> ?PR?_CONVERSION?STC_LSM303DLH
+  +--> ?PR?_DISPLAYONECHAR?STC_LSM303DLH
+
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 4
+
+
+?PR?_ATAN2?ATAN2                           -----    -----      0010H    0008H
+  +--> ?PR?ATAN?ATAN
+
+?PR?ATAN?ATAN                              0020H.0  0000H.2    0018H    0004H
+
+
+
+SYMBOL TABLE OF MODULE:  STC_LSM303DLH (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0A8EH         SEGMENT       ?C_C51STARTUP
+  I:0030H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:0A91H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0000H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:0A8EH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         92
+  C:0A8EH         LINE#         99
+  C:0A90H         LINE#         100
+  C:0A91H         LINE#         101
+  C:0A92H         LINE#         102
+  C:0A94H         LINE#         151
+  C:0A97H         LINE#         155
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        STC_LSM303DLH
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:0A55H         PUBLIC        Delay5ms
+  C:0A0CH         PUBLIC        WaitForEnable
+  C:0A9AH         PUBLIC        LSM303_Stop
+  C:09A7H         PUBLIC        LSM303_RecvByte
+  C:09F7H         PUBLIC        _WriteCommandLCM
+  C:0A44H         PUBLIC        Delay5us
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 5
+
+
+  B:00D0H.7       PUBLIC        CY
+  C:0A35H         PUBLIC        _Single_Read
+  C:08DEH         PUBLIC        main
+  C:09C5H         PUBLIC        InitLcd
+  D:0021H         PUBLIC        qian
+  C:0692H         PUBLIC        _conversion
+  D:0022H         PUBLIC        bai
+  C:0944H         PUBLIC        _Multiple_read
+  C:09E0H         PUBLIC        _Single_Write
+  C:0AA6H         PUBLIC        Init_LSM303A
+  D:0023H         PUBLIC        dis_data
+  C:0A73H         PUBLIC        LSM303_SendACK
+  C:05C5H         PUBLIC        display_Angle
+  D:0025H         PUBLIC        shi
+  C:0A81H         PUBLIC        LSM303_RecvACK
+  D:0026H         PUBLIC        wan
+  C:0AAFH         PUBLIC        Init_LSM303M
+  C:0A20H         PUBLIC        _WriteDataLCM
+  D:0027H         PUBLIC        ge
+  B:00A0H.2       PUBLIC        LCM_EN
+  C:086CH         PUBLIC        display_x
+  C:0786H         PUBLIC        display_y
+  C:0710H         PUBLIC        display_z
+  B:0090H.1       PUBLIC        SDA
+  D:0028H         PUBLIC        BUF
+  C:0988H         PUBLIC        _DisplayOneChar
+  B:00A0H.0       PUBLIC        LCM_RS
+  B:0090H.0       PUBLIC        SCL
+  B:00A0H.1       PUBLIC        LCM_RW
+  C:092BH         PUBLIC        _LSM303_SendByte
+  C:0968H         PUBLIC        _delay
+  C:0A64H         PUBLIC        LSM303_Start
+  C:067CH         SYMBOL        L?0065
+  -------         PROC          L?0064
+  -------         ENDPROC       L?0064
+  C:067CH         SYMBOL        L?0065
+  -------         PROC          _CONVERSION
+  D:0002H         SYMBOL        temp_data
+  C:0692H         LINE#         60
+  C:0696H         LINE#         61
+  C:0696H         LINE#         62
+  C:06A2H         LINE#         63
+  C:06B1H         LINE#         64
+  C:06C1H         LINE#         65
+  C:06D0H         LINE#         66
+  C:06E0H         LINE#         67
+  C:06EFH         LINE#         68
+  C:06FFH         LINE#         69
+  C:070AH         LINE#         70
+  C:070FH         LINE#         71
+  -------         ENDPROC       _CONVERSION
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        k
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 6
+
+
+  C:0968H         LINE#         74
+  C:0968H         LINE#         75
+  C:0968H         LINE#         77
+  C:0972H         LINE#         78
+  C:0972H         LINE#         79
+  C:0975H         LINE#         80
+  C:0987H         LINE#         81
+  -------         ENDPROC       _DELAY
+  -------         PROC          WAITFORENABLE
+  C:0A0CH         LINE#         83
+  C:0A0CH         LINE#         84
+  C:0A0CH         LINE#         85
+  C:0A0FH         LINE#         86
+  C:0A14H         LINE#         87
+  C:0A18H         LINE#         88
+  C:0A1DH         LINE#         89
+  C:0A1FH         LINE#         90
+  -------         ENDPROC       WAITFORENABLE
+  -------         PROC          _WRITECOMMANDLCM
+  D:0007H         SYMBOL        CMD
+  D:0005H         SYMBOL        Attribc
+  C:09F7H         LINE#         92
+  C:09F7H         LINE#         93
+  C:09F7H         LINE#         94
+  C:09FDH         LINE#         95
+  C:0A02H         LINE#         96
+  C:0A05H         LINE#         97
+  C:0A0BH         LINE#         98
+  -------         ENDPROC       _WRITECOMMANDLCM
+  -------         PROC          _WRITEDATALCM
+  D:0007H         SYMBOL        dataW
+  C:0A20H         LINE#         100
+  C:0A20H         LINE#         101
+  C:0A20H         LINE#         102
+  C:0A23H         LINE#         103
+  C:0A28H         LINE#         104
+  C:0A2BH         LINE#         105
+  C:0A31H         LINE#         106
+  -------         ENDPROC       _WRITEDATALCM
+  -------         PROC          INITLCD
+  C:09C5H         LINE#         108
+  C:09C5H         LINE#         109
+  C:09C5H         LINE#         110
+  C:09CCH         LINE#         111
+  C:09D1H         LINE#         112
+  C:09D6H         LINE#         113
+  C:09DBH         LINE#         114
+  -------         ENDPROC       INITLCD
+  -------         PROC          _DISPLAYONECHAR
+  D:0006H         SYMBOL        X
+  D:0005H         SYMBOL        Y
+  D:0004H         SYMBOL        DData
+  C:0988H         LINE#         117
+  C:098CH         LINE#         118
+  C:098CH         LINE#         119
+  C:098FH         LINE#         120
+  C:0992H         LINE#         121
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 7
+
+
+  C:0998H         LINE#         122
+  C:099BH         LINE#         123
+  C:09A2H         LINE#         124
+  -------         ENDPROC       _DISPLAYONECHAR
+  -------         PROC          DELAY5US
+  C:0A44H         LINE#         132
+  C:0A44H         LINE#         133
+  C:0A44H         LINE#         134
+  C:0A48H         LINE#         135
+  C:0A4CH         LINE#         136
+  C:0A50H         LINE#         137
+  C:0A54H         LINE#         138
+  -------         ENDPROC       DELAY5US
+  -------         PROC          DELAY5MS
+  -------         DO            
+  D:0006H         SYMBOL        n
+  -------         ENDDO         
+  C:0A55H         LINE#         145
+  C:0A55H         LINE#         146
+  C:0A55H         LINE#         147
+  C:0A59H         LINE#         149
+  C:0A63H         LINE#         150
+  -------         ENDPROC       DELAY5MS
+  -------         PROC          LSM303_START
+  C:0A64H         LINE#         155
+  C:0A64H         LINE#         156
+  C:0A64H         LINE#         157
+  C:0A66H         LINE#         158
+  C:0A68H         LINE#         159
+  C:0A6BH         LINE#         160
+  C:0A6DH         LINE#         161
+  C:0A70H         LINE#         162
+  C:0A72H         LINE#         163
+  -------         ENDPROC       LSM303_START
+  -------         PROC          LSM303_STOP
+  C:0A9AH         LINE#         168
+  C:0A9AH         LINE#         169
+  C:0A9AH         LINE#         170
+  C:0A9CH         LINE#         171
+  C:0A9EH         LINE#         172
+  C:0AA1H         LINE#         173
+  C:0AA3H         LINE#         174
+  -------         ENDPROC       LSM303_STOP
+  -------         PROC          LSM303_SENDACK
+  B:0020H.0       SYMBOL        ack
+  C:0A73H         LINE#         181
+  C:0A73H         LINE#         182
+  C:0A73H         LINE#         183
+  C:0A77H         LINE#         184
+  C:0A79H         LINE#         185
+  C:0A7CH         LINE#         186
+  C:0A7EH         LINE#         187
+  -------         ENDPROC       LSM303_SENDACK
+  -------         PROC          LSM303_RECVACK
+  C:0A81H         LINE#         193
+  C:0A81H         LINE#         194
+  C:0A81H         LINE#         195
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 8
+
+
+  C:0A83H         LINE#         196
+  C:0A86H         LINE#         197
+  C:0A88H         LINE#         198
+  C:0A8AH         LINE#         199
+  C:0A8DH         LINE#         201
+  C:0A8DH         LINE#         202
+  -------         ENDPROC       LSM303_RECVACK
+  -------         PROC          L?0066
+  -------         ENDPROC       L?0066
+  -------         PROC          _LSM303_SENDBYTE
+  D:0007H         SYMBOL        dat
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:092BH         LINE#         207
+  C:092BH         LINE#         208
+  C:092BH         LINE#         211
+  C:092DH         LINE#         212
+  C:092DH         LINE#         213
+  C:0931H         LINE#         214
+  C:0933H         LINE#         215
+  C:0935H         LINE#         216
+  C:0938H         LINE#         217
+  C:093AH         LINE#         218
+  C:093DH         LINE#         219
+  C:0941H         LINE#         220
+  -------         ENDPROC       _LSM303_SENDBYTE
+  -------         PROC          LSM303_RECVBYTE
+  -------         DO            
+  D:0006H         SYMBOL        i
+  D:0007H         SYMBOL        dat
+  -------         ENDDO         
+  C:09A7H         LINE#         226
+  C:09A7H         LINE#         227
+  C:09A7H         LINE#         229
+  C:09A9H         LINE#         231
+  C:09ABH         LINE#         232
+  C:09ACH         LINE#         233
+  C:09ACH         LINE#         234
+  C:09B0H         LINE#         235
+  C:09B2H         LINE#         236
+  C:09B5H         LINE#         237
+  C:09BBH         LINE#         238
+  C:09BDH         LINE#         239
+  C:09C0H         LINE#         240
+  C:09C4H         LINE#         241
+  C:09C4H         LINE#         242
+  -------         ENDPROC       LSM303_RECVBYTE
+  -------         PROC          _SINGLE_WRITE
+  D:0006H         SYMBOL        SlaveAddress
+  D:0005H         SYMBOL        REG_Address
+  D:0004H         SYMBOL        REG_data
+  C:09E0H         LINE#         246
+  C:09E4H         LINE#         247
+  C:09E4H         LINE#         248
+  C:09E7H         LINE#         249
+  C:09EAH         LINE#         250
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 9
+
+
+  C:09EFH         LINE#         251
+  C:09F4H         LINE#         252
+  -------         ENDPROC       _SINGLE_WRITE
+  -------         PROC          L?0067
+  -------         ENDPROC       L?0067
+  -------         PROC          _SINGLE_READ
+  D:0004H         SYMBOL        SlaveAddress
+  D:0005H         SYMBOL        REG_Address
+  -------         DO            
+  D:0007H         SYMBOL        REG_data
+  -------         ENDDO         
+  C:0A35H         LINE#         256
+  C:0A35H         LINE#         257
+  C:0A35H         LINE#         258
+  C:0A35H         LINE#         259
+  C:0A35H         LINE#         260
+  C:0A35H         LINE#         261
+  C:0A35H         LINE#         262
+  C:0A38H         LINE#         263
+  C:0A3BH         LINE#         264
+  C:0A40H         LINE#         265
+  C:0A43H         LINE#         266
+  C:0A43H         LINE#         267
+  -------         ENDPROC       _SINGLE_READ
+  -------         PROC          _MULTIPLE_READ
+  D:0004H         SYMBOL        SlaveAddress
+  D:0005H         SYMBOL        ST_Address
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:0944H         LINE#         271
+  C:0944H         LINE#         272
+  C:0944H         LINE#         273
+  C:0944H         LINE#         274
+  C:0944H         LINE#         275
+  C:0944H         LINE#         276
+  C:0944H         LINE#         277
+  C:0947H         LINE#         278
+  C:0949H         LINE#         279
+  C:0949H         LINE#         280
+  C:0952H         LINE#         281
+  C:0955H         LINE#         282
+  C:0955H         LINE#         283
+  C:0957H         LINE#         284
+  C:0959H         LINE#         286
+  C:0959H         LINE#         287
+  C:095EH         LINE#         288
+  C:095EH         LINE#         289
+  C:0962H         LINE#         290
+  C:0965H         LINE#         291
+  -------         ENDPROC       _MULTIPLE_READ
+  -------         PROC          INIT_LSM303A
+  C:0AA6H         LINE#         297
+  C:0AA6H         LINE#         298
+  C:0AA6H         LINE#         299
+  -------         ENDPROC       INIT_LSM303A
+  -------         PROC          INIT_LSM303M
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 10
+
+
+  C:0AAFH         LINE#         303
+  C:0AAFH         LINE#         304
+  C:0AAFH         LINE#         305
+  -------         ENDPROC       INIT_LSM303M
+  -------         PROC          DISPLAY_X
+  -------         DO            
+  D:0004H         SYMBOL        temp
+  -------         ENDDO         
+  C:086CH         LINE#         309
+  C:086CH         LINE#         310
+  C:086CH         LINE#         311
+  C:0875H         LINE#         312
+  C:087AH         LINE#         314
+  C:0887H         LINE#         316
+  C:088EH         LINE#         317
+  C:0899H         LINE#         318
+  C:089BH         LINE#         319
+  C:089DH         LINE#         320
+  C:08A6H         LINE#         322
+  C:08A6H         LINE#         323
+  C:08A9H         LINE#         324
+  C:08B1H         LINE#         325
+  C:08BAH         LINE#         326
+  C:08C3H         LINE#         327
+  C:08CCH         LINE#         328
+  C:08D5H         LINE#         329
+  -------         ENDPROC       DISPLAY_X
+  -------         PROC          DISPLAY_Y
+  -------         DO            
+  D:0004H         SYMBOL        temp
+  -------         ENDDO         
+  C:0786H         LINE#         334
+  C:0786H         LINE#         335
+  C:0786H         LINE#         336
+  C:078FH         LINE#         337
+  C:0794H         LINE#         340
+  C:07A1H         LINE#         341
+  C:07A8H         LINE#         342
+  C:07B3H         LINE#         343
+  C:07B5H         LINE#         344
+  C:07B7H         LINE#         345
+  C:07C0H         LINE#         347
+  C:07C0H         LINE#         348
+  C:07C3H         LINE#         349
+  C:07CCH         LINE#         350
+  C:07D5H         LINE#         351
+  C:07DEH         LINE#         352
+  C:07E7H         LINE#         353
+  C:07F0H         LINE#         355
+  -------         ENDPROC       DISPLAY_Y
+  -------         PROC          DISPLAY_Z
+  -------         DO            
+  D:0004H         SYMBOL        temp
+  -------         ENDDO         
+  C:0710H         LINE#         360
+  C:0710H         LINE#         361
+  C:0710H         LINE#         362
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 11
+
+
+  C:0719H         LINE#         363
+  C:0721H         LINE#         365
+  C:072EH         LINE#         366
+  C:0735H         LINE#         367
+  C:0740H         LINE#         368
+  C:0742H         LINE#         369
+  C:0744H         LINE#         370
+  C:074DH         LINE#         372
+  C:074DH         LINE#         373
+  C:0750H         LINE#         374
+  C:0759H         LINE#         375
+  C:0762H         LINE#         376
+  C:076BH         LINE#         377
+  C:0774H         LINE#         378
+  C:077DH         LINE#         380
+  -------         ENDPROC       DISPLAY_Z
+  -------         PROC          DISPLAY_ANGLE
+  -------         DO            
+  D:0008H         SYMBOL        x
+  D:0004H         SYMBOL        y
+  D:000AH         SYMBOL        z
+  D:000CH         SYMBOL        angle
+  -------         ENDDO         
+  C:05C5H         LINE#         383
+  C:05C5H         LINE#         384
+  C:05C5H         LINE#         387
+  C:05CDH         LINE#         388
+  C:05D5H         LINE#         389
+  C:05DDH         LINE#         391
+  C:0625H         LINE#         392
+  C:0637H         LINE#         394
+  C:063DH         LINE#         395
+  C:0646H         LINE#         396
+  C:064FH         LINE#         397
+  C:0658H         LINE#         398
+  C:0661H         LINE#         399
+  C:066AH         LINE#         400
+  C:0673H         LINE#         401
+  -------         ENDPROC       DISPLAY_ANGLE
+  -------         PROC          MAIN
+  C:08DEH         LINE#         407
+  C:08DEH         LINE#         408
+  C:08DEH         LINE#         409
+  C:08E5H         LINE#         410
+  C:08E8H         LINE#         411
+  C:08EBH         LINE#         412
+  C:08EEH         LINE#         413
+  C:08EEH         LINE#         414
+  C:08EEH         LINE#         415
+  C:08F5H         LINE#         416
+  C:08F8H         LINE#         417
+  C:08FBH         LINE#         418
+  C:08FEH         LINE#         420
+  C:0905H         LINE#         421
+  C:090CH         LINE#         422
+  C:090FH         LINE#         423
+  C:0916H         LINE#         424
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 12
+
+
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        STC_LSM303DLH
+
+  -------         MODULE        ?C?FPADD
+  C:000AH         PUBLIC        ?C?FPADD
+  C:0006H         PUBLIC        ?C?FPSUB
+  -------         ENDMOD        ?C?FPADD
+
+  -------         MODULE        ?C?FPMUL
+  C:00FBH         PUBLIC        ?C?FPMUL
+  -------         ENDMOD        ?C?FPMUL
+
+  -------         MODULE        ?C?FPDIV
+  C:0204H         PUBLIC        ?C?FPDIV
+  -------         ENDMOD        ?C?FPDIV
+
+  -------         MODULE        ?C?FCAST
+  C:02ABH         PUBLIC        ?C?FCASTC
+  C:02A6H         PUBLIC        ?C?FCASTI
+  C:02A1H         PUBLIC        ?C?FCASTL
+  -------         ENDMOD        ?C?FCAST
+
+  -------         MODULE        ?C?CASTF
+  C:02DFH         PUBLIC        ?C?CASTF
+  -------         ENDMOD        ?C?CASTF
+
+  -------         MODULE        ATAN2
+  D:0010H         PUBLIC        ?_atan2?BYTE
+  C:07F9H         PUBLIC        _atan2
+  -------         ENDMOD        ATAN2
+
+  -------         MODULE        ?C?FPCMP
+  C:0362H         PUBLIC        ?C?FPCMP
+  C:0360H         PUBLIC        ?C?FPCMP3
+  -------         ENDMOD        ?C?FPCMP
+
+  -------         MODULE        ATAN
+  C:04BDH         PUBLIC        _ATAN
+  -------         ENDMOD        ATAN
+
+  -------         MODULE        ?C?UIDIV
+  C:041AH         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+  -------         MODULE        ?C?LNEG
+  C:046FH         PUBLIC        ?C?LNEG
+  -------         ENDMOD        ?C?LNEG
+
+  -------         MODULE        ?C?LLDCODE
+  C:047DH         PUBLIC        ?C?LLDCODE
+  -------         ENDMOD        ?C?LLDCODE
+
+  -------         MODULE        ?C?LLDCODE0
+  C:048DH         PUBLIC        ?C?LLDCODE0
+  -------         ENDMOD        ?C?LLDCODE0
+
+Program Size: data=44.2 xdata=0 code=2744
+BL51 BANKED LINKER/LOCATER V5.03                                                      06/19/2011  23:40:18  PAGE 13
+
+
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

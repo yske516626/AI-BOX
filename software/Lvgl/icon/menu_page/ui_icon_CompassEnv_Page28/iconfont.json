@@ -1,0 +1,37 @@
+{
+  "id": "4899814",
+  "name": "28",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "35683435",
+      "name": "温度-copy",
+      "font_class": "wendu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1340",
+      "name": "远景",
+      "font_class": "yuanjing",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5158734",
+      "name": "X-环境",
+      "font_class": "X-huanjing",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "21370352",
+      "name": "指针",
+      "font_class": "zhizhen",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

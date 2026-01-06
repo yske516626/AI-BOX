@@ -1,0 +1,37 @@
+{
+  "id": "4899843",
+  "name": "34",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "399082",
+      "name": "ok",
+      "font_class": "ok",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "1167181",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "1727491",
+      "name": "246注销、关机",
+      "font_class": "zhuxiaoguanji",
+      "unicode": "e8d8",
+      "unicode_decimal": 59608
+    },
+    {
+      "icon_id": "4893427",
+      "name": "蓝牙",
+      "font_class": "lanya",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    }
+  ]
+}

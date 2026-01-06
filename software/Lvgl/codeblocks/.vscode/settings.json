@@ -1,0 +1,30 @@
+{
+    "files.associations": {
+		"lvgl.h": "c",
+		"funchwdatamanage.h": "c",
+		"lv_conf.h": "c",
+		"ui.h": "c",
+		"ui_a_homepage.h": "c",
+		"lv_flex.h": "c",
+		"lv_calendar_header_dropdown.h": "c",
+		"lv_obj.h": "c",
+		"ui_e_spo2page.h": "c",
+		"stdint.h": "c",
+		"system_error": "c",
+		"ui_g_timerpage.h": "c",
+		"ui_f_calculatorpage.h": "c",
+		"ui_i_nfcpage.h": "c",
+		"ui_j_envpage.h": "c",
+		"ui_l_2048page": "c",
+		"ui_k_gamepage.h": "c",
+		"ui_m_mottionpage.h": "c",
+		"ui_helpers.h": "c",
+		"stdlib.h": "c",
+		"stdio.h": "c",
+		"ui_p_setdatepage.h": "c",
+		"ui_n_settingpage.h": "c",
+		"lv_img.h": "c",
+		"ui_c_calender.h": "c",
+		"funcuipagemanage.h": "c"
+	}
+}

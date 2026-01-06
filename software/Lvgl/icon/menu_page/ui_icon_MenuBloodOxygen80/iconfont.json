@@ -1,0 +1,16 @@
+{
+  "id": "4894346",
+  "name": "SPO2 page",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11499991",
+      "name": "血氧",
+      "font_class": "xieyang",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    }
+  ]
+}
